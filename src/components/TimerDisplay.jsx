@@ -1,8 +1,15 @@
 import React from 'react'
 
-const TimerDisplay = () => {
+const TimerDisplay = ({time,status}) => {
     return (
-        <div>TimerDisplay</div>
+        <div className="timer-display">
+            
+        <div>{time}</div>
+        <p className={`timer-status 
+        ${status==='실행중'? 'running':status==='일시정지'? 'pause':'reset'}`}>
+        {status}
+        </p>
+        </div>
     )
 }
 

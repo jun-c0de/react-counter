@@ -1,15 +1,13 @@
-import { useState } from 'react'
 import './App.css'
 import Timer from './components/Timer'
-
+import { useState } from 'react'
 function App() {
-  
-  return(
-    
+
+
+  return (
     <div className='app-container'>
-      <Timer/>
-    </div> 
-    
+      <Timer />
+    </div>
   )
 }
 
